@@ -1,0 +1,68 @@
+.section--another-background {
+    background: $secondary-white-background-color;
+}
+
+.team-list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+    &__box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__title {
+        color: #212121;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.19;
+
+    }
+}
+
+/* .team-list .employee {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  
+} */
+
+.team-list__link {
+
+    margin-right: 30px;
+    background: $main-background-color;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.social-sites__icon--grey {
+    fill: $symbol-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-sites__item:hover &,
+    .social-sites__item:focus & {
+
+        fill: $main-background-color;
+    }
+
+}

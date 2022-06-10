@@ -1,0 +1,135 @@
+.header {
+    border-bottom: 1px solid $page-header-color;
+    background: $main-background-color;
+
+    &__container {
+        display: flex;
+    }
+}
+
+
+nav {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav__item {
+    margin-right: 50px;
+    list-style: none;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style: none;
+    text-decoration: none;
+
+    /* transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+
+    }
+
+}
+
+.site-nav__link--current {
+    position: relative;
+    color: $accent-color;
+
+ &::after {
+        position: absolute;
+        display: inline-block;
+        content: " ";
+        bottom: 0;
+        left: 0;
+        Width: 100%;
+        Height: 4px;
+        background: $accent-color;
+        border-radius: 2px;
+    }
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.auth-nav__item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.auth-nav__link {
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    list-style: none;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: $accent-color;
+    }
+
+}
+
+/* Sprite */
+
+.auth-nav__icon {
+    margin-right: 10px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+
+    &--shape {
+        width: 10px;
+        height: 16px;
+    }
+}
