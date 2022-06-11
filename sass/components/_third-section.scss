@@ -1,4 +1,12 @@
-.section--no-padding-top {
+
+@media screen and (max-width:1199px) {
+    .section--no-padding-top {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section--no-padding-top {
     padding-top: 0;
 }
 
@@ -40,4 +48,5 @@
 
         background: rgba(47, 48, 58, 0.8);
     }
+}
 }

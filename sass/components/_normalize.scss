@@ -43,8 +43,15 @@ img {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
@@ -54,14 +61,14 @@ img {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
-}
+    @media screen and (max-width:1199px) {
+        margin-bottom: 30px;
+    }
 
-// .third-title {
-//     color: #212121;
-//     margin-top: 0;
-//     margin-bottom: 10px;
-// }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+}
 
 .visually-hidden {
     position: absolute;

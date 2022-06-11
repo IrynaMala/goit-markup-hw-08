@@ -2,21 +2,39 @@
     border-bottom: 1px solid $page-header-color;
     background: $main-background-color;
 
-    &__container {
-        display: flex;
-    }
+    // &__container {
+    //     display: flex;
+    // }
 }
 
 
 nav {
-    display: flex;
+    // display: flex;
     align-items: baseline;
 }
 
-
-.site-nav {
-    display: flex;
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+// .site-nav {
+//     display: flex;
+// }
 
 .site-nav__item {
     margin-right: 50px;
@@ -74,7 +92,7 @@ nav {
 }
 
 .auth-nav {
-    display: flex;
+    // display: flex;
     margin-left: auto;
 
 }
