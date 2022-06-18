@@ -1,6 +1,6 @@
 
 .advantages {
-
+    margin: -15px;
 
     @media screen and  (min-width: 768px){
         display: flex;
@@ -58,39 +58,15 @@
 
 
 .advantages__item {
-    
-
-   @media screen and (min-width:480px) {
-     &:last-child {
-        margin-bottom: 0;
-    }
-
-
-
-      margin-bottom: 30px;
-      width: 100%;
-    }
+    margin: 15px;
 
    @media screen and (min-width:768px) {
-     &:nth-child(odd) {
-            margin-right: 30px;
-
-        }
-
-        width: 47%;
-        margin-bottom: 30px;
+     width: calc((100% - 2 * 30px) / 2);
     }
 
 
    @media screen and (min-width:1200px) {
-     width: 33.3333%;
-     margin-right: 30px;
-     margin-left: 0;
-
-     .advantages__list:last-child {
-         margin-right: 0;
-        }
-
+     width: calc((100% - 4 * 30px) / 4);
     }
 }
 

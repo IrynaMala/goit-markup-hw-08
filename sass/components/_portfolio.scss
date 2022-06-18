@@ -1,19 +1,39 @@
-.studiia-section {
+.section {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 
     &__menu {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-        margin-left: auto;
-        margin-right: auto;
         list-style: none;
         text-decoration: none;
+
+
+        @media screen and (max-width:767px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        
+        @media screen and (max-width:1199px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width:1200px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
+
+   
+
+
 }
 
 .studiia-section__button-portfolio {
@@ -42,15 +62,20 @@
 
 
 
-.studiia-section__work-list {
+.section__work-list {
     margin-right: 8px;
     border-radius: 4px;
 
-    transition: bow-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:last-child {
         margin-right: 0;
     }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+
+    transition: bow-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -68,8 +93,8 @@
     flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
+
 
     &__site-info {
 
@@ -77,9 +102,7 @@
         padding-right: 24px;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-left: 1px solid $border-color;
-        border-right: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
+        
     }
 
     &__title {
@@ -100,12 +123,25 @@
 }
 
 .studiia-examples__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    display: block;
+    margin: 15px;
     background: $main-background-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
 
-    &:nth-child(3n) {
-        margin-right: 0px;
+    @media screen and (min-width:480px) {
+        width: calc((100% - 1 * 30px) / 1);
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: calc((100% - 2 * 30px) / 2);
+       
+    }
+
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 3 * 30px) / 3);
+
     }
 
 }
@@ -130,6 +166,9 @@
 .studiia-examples__thumb {
     position: relative;
     overflow: hidden;
+    
+
+   
 }
 
 .studiia-examples__web-info {
