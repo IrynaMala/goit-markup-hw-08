@@ -1,17 +1,19 @@
 .clients {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
-    margin: -15px;
     list-style: none;
-    
+
+    @media screen and (min-width:480px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
     @media screen and (min-width:1200px) {
+        margin: -15px;
         flex-wrap: nowrap;
     }
 }
 
 .clients__link {
-
+    
     height: 92px;
     display: flex;
     align-items: center;
