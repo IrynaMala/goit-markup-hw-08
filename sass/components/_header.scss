@@ -3,6 +3,7 @@
     background: $main-background-color;
 
     &__container {
+        align-items: center;
         position: relative;
         display: flex;
     }
@@ -146,6 +147,7 @@
         padding-bottom: 32px;
         line-height: 1.14;
     }
+
     &:hover,
     &:focus {
         color: $accent-color;
@@ -270,8 +272,9 @@
     }
     @media screen and (min-width:1200px) {
         line-height: 1.14;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        font-size: 14px;
+        padding-top: 21px;
+        padding-bottom: 21px;
         
     }
 
