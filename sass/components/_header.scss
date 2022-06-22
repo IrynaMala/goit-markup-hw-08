@@ -72,11 +72,14 @@
         z-index: 10;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     }
+
     @media screen and (max-width:767px) {
         position: absolute;
-        height: 796px;
         padding: 48px 40px;
+        height: 796px;
     }
+
+
     @media screen and (min-width:768px) {
         display: flex;
     }
@@ -135,7 +138,7 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         font-size: 40px;
         line-height: 1.17;
         letter-spacing: 0.02em;
@@ -183,6 +186,7 @@
     @media screen and (max-width:767px) {
         margin-top: auto;
     }
+
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: center;
@@ -214,7 +218,7 @@
 
 .auth-nav__item {
 
-    @media screen and (min-width:768px) {
+    @media screen and  (min-width:768px) {
         margin-bottom: 10px;
 
         &:last-child {
@@ -235,6 +239,30 @@
             margin-right: 0;
         }
     }
+
+    @media screen and (min-width:480px) {
+        &{
+            font-size: 24px;
+        }
+
+        &:last-child  .auth-nav__link {
+            font-size: 34px;
+        }
+    }
+
+    @media screen and (max-width:767px){
+        & {
+            margin-bottom: 64px;
+            line-height: 1.16;
+
+        }
+
+        &:last-child  .auth-nav__link {
+            margin-bottom: 32px;
+            line-height: 1.17;
+            color: $accent-color;
+        }
+}
 }
 
 .auth-nav__link {
@@ -250,21 +278,7 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 480px) and (max-width:767px){
-            & {
-                margin-bottom: 64px;
-                font-size: 24px;
-                line-height: 1.16;
     
-            }
-    
-            .auth-nav__item:last-child  &{
-                margin-bottom: 32px;
-                font-size: 34px;
-                line-height: 1.17;
-                color: $accent-color;
-            }
-        }
 
     @media screen and (min-width:768px) {
         font-size: 12px;
@@ -331,6 +345,10 @@
 
 
 
+    @media screen and (max-width:480px) {
+        flex-wrap: wrap;
+    }
+
     @media screen and (min-width: $tablet) {
         display: none;
     }
@@ -341,11 +359,10 @@
 .menu-social__item {
 
     font-weight: 500;
-    font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
-    padding: 0 10px;
+   
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
     &:first-child {
@@ -354,5 +371,10 @@
 
     &:last-child {
         border: none;
+    }
+
+    @media screen and (min-width:480px) {
+        font-size: 18px;
+        padding: 0 10px;
     }
 }
